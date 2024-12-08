@@ -1,0 +1,56 @@
+/* 全体をflexboxで設定 */
+.app-container {
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    height: 100%; /* ビューポート全体の高さ */
+  }
+  
+  /* ヘッダーのスタイル */
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* フッターのスタイル */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* フッターを下に固定 */
+  }
+  
+  /* コンテンツエリア */
+  .content-area {
+    display: flex;
+    flex-wrap: wrap; /* 横に並べて、折り返す */
+    justify-content: flex-start; /* 商品カードを左寄せに配置 */
+    gap: 20px;
+    padding: 20px;
+    flex: 1; /* 残りのスペースを占める */
+    width: 100%;
+  }
+  
+  /* 商品カードのスタイル */
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 500px;
+    height: 700px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* 画面の縮小時にサイズを変更しない */
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    color: #777;
+  }
+  
