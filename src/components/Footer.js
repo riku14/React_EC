@@ -4,7 +4,7 @@ import '../assets/style/Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2024 ECサイト. All Rights Reserved.</p>
+      <p>あとから概要欄等追加</p>
     </footer>
   );
 };
